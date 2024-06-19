@@ -1,0 +1,17 @@
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\bin\Debug\net8.0\Publisher1.exe
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\bin\Debug\net8.0\Publisher1.deps.json
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\bin\Debug\net8.0\Publisher1.runtimeconfig.json
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\bin\Debug\net8.0\Publisher1.dll
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\bin\Debug\net8.0\Publisher1.pdb
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\obj\Debug\net8.0\Publisher1.csproj.AssemblyReference.cache
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\obj\Debug\net8.0\Publisher1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\obj\Debug\net8.0\Publisher1.AssemblyInfoInputs.cache
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\obj\Debug\net8.0\Publisher1.AssemblyInfo.cs
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\obj\Debug\net8.0\Publisher1.csproj.CoreCompileInputs.cache
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\obj\Debug\net8.0\Publisher1.csproj.Up2Date
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\obj\Debug\net8.0\Publisher1.dll
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\obj\Debug\net8.0\refint\Publisher1.dll
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\obj\Debug\net8.0\Publisher1.pdb
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\obj\Debug\net8.0\Publisher1.genruntimeconfig.cache
+C:\Users\Kadir\RiderProjects\Publisher1\Publisher1\obj\Debug\net8.0\ref\Publisher1.dll
