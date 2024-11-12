@@ -13,20 +13,23 @@ using RabbitMQ.Client.Events;
 
 // Bağlantı oluşturuldu
 ConnectionFactory factory = new();
-factory.Uri = new("amqps://aiohjrdn:UFqTC2u3AMj-4lzJrDWLJY0Znb-oDINo@goose.rmq2.cloudamqp.com/aiohjrdn");
+factory.Uri = new("amqps://eqqzgmee:0ZpLq3Z1_mgDvAmTstZkZXxO7fS_Ustx@goose.rmq2.cloudamqp.com/eqqzgmee");
 
-// Bağlantıyı aktifleştir
-using var conneciton = factory.CreateConnection();
-using var channel = conneciton.CreateModel();
-
-//Queue oluşturma ----> bu yapı publisher ile aynı yapı olmalı
+//Bağlantıyı aktifleştirmw
+using IConnection connection = factory.CreateConnection();
+using IModel channel = connection.CreateModel();
+ 
+//Queue oluşturma, publisher'daki gibi tanmlamalıyız birebir aynı olamalı
 channel.QueueDeclare(queue: "example", exclusive: false);
 
-// Queue'dan mesaj okumak için event sınıflarnı kullanırız
+//Queue'den Mesaj okuma, event channle'de gerçekleşmesi için dinlemeye alındı
 EventingBasicConsumer consumer = new(channel);
-channel.BasicConsume(queue: "example", false, consumer);
+
+channel.BasicConsume("example",false, consumer);
+
 consumer.Received += (sender, e) =>
 {
+    //Kuyruğa gelen mesajın işlendiği yer
     Console.WriteLine(Encoding.UTF8.GetString(e.Body.Span));
 };
 

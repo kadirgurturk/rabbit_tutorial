@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kadir\\RiderProjects\\Publisher1\\Publisher1\\Publisher1.csproj": {}
+    "C:\\Users\\Kadir\\RiderProjects\\rabbit_tutorial\\BasitConsumer&Publisher\\Publisher1\\Publisher1\\Publisher1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kadir\\RiderProjects\\Publisher1\\Publisher1\\Publisher1.csproj": {
+    "C:\\Users\\Kadir\\RiderProjects\\rabbit_tutorial\\BasitConsumer&Publisher\\Publisher1\\Publisher1\\Publisher1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kadir\\RiderProjects\\Publisher1\\Publisher1\\Publisher1.csproj",
+        "projectUniqueName": "C:\\Users\\Kadir\\RiderProjects\\rabbit_tutorial\\BasitConsumer&Publisher\\Publisher1\\Publisher1\\Publisher1.csproj",
         "projectName": "Publisher1",
-        "projectPath": "C:\\Users\\Kadir\\RiderProjects\\Publisher1\\Publisher1\\Publisher1.csproj",
+        "projectPath": "C:\\Users\\Kadir\\RiderProjects\\rabbit_tutorial\\BasitConsumer&Publisher\\Publisher1\\Publisher1\\Publisher1.csproj",
         "packagesPath": "C:\\Users\\Kadir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kadir\\RiderProjects\\Publisher1\\Publisher1\\obj\\",
+        "outputPath": "C:\\Users\\Kadir\\RiderProjects\\rabbit_tutorial\\BasitConsumer&Publisher\\Publisher1\\Publisher1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kadir\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Kadir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

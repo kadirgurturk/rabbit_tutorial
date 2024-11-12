@@ -12,19 +12,19 @@ using RabbitMQ.Client;
 
 // Bağlantı oluşturuldu
 ConnectionFactory factory = new();
-factory.Uri = new("amqps://aiohjrdn:UFqTC2u3AMj-4lzJrDWLJY0Znb-oDINo@goose.rmq2.cloudamqp.com/aiohjrdn");
+factory.Uri = new("amqps://eqqzgmee:0ZpLq3Z1_mgDvAmTstZkZXxO7fS_Ustx@goose.rmq2.cloudamqp.com/eqqzgmee");
 
 // Bağlantıyı aktifleştir
-using var connection = factory.CreateConnection(); // aktifleşme tamamlandı
-using var model = connection.CreateModel(); // kanak oluşturma
+using var conneciton = factory.CreateConnection();
+using var channel = conneciton.CreateModel();
 
-//Queue oluşturma --> queue:"example": kuyruğun adı ve RoutingKey'i ---- ,exclusive:false: bu kuyruğun tek bir kanaldan dinlenip dinlenilemeyeciğine karan veren argümandır.
-model.QueueDeclare(queue: "example", exclusive: false);
+//Queue oluşturma ----> bu yapı publisher ile aynı yapı olmalı, ilk parametre adı, exclusive ise bu kuyruğun özel olup olamdığını yani birden fazla bağlantı tarafından kullanıp kullanılamaycağını işaret eder.
+channel.QueueDeclare(queue: "example", exclusive: false);
 
-// Queue'ye mesaj gönderme, RabbitMq kuyruğu atacağı mesajları byte türünden kabul edilir.
-// Bu sebeple bizim mesajları byte türünden alır ve gönderir.
+//Queue'ya mesaj gönderme, RabbitMq mesajı byte türünden kabul eder, mesajları byte'a çevirmeiliyiz
+var messeage = Encoding.UTF8.GetBytes("Merhaba Kadir");
 
-var message = Encoding.UTF8.GetBytes("FirstRabbit");
-model.BasicPublish(exchange:"",routingKey:"example",body:message);
+//Sıra göndermede mesajı, defeault excahnge-->directExchange, directExchange'de routingKey, queue ismi olmalı,
+channel.BasicPublish(exchange:"", routingKey: "example", body: messeage);
 
 Console.Read();
